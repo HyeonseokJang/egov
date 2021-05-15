@@ -102,6 +102,13 @@ public class EgovSampleController {
 
 		return "sample/egovSampleList";
 	}
+	
+	@RequestMapping(value = "/egovMain.do")
+	public String showMain() throws Exception {
+
+		return "sample/main";
+	}
+	
 
 	/**
 	 * 글 등록 화면을 조회한다.
