@@ -7,10 +7,18 @@
 <title>Main Page</title>
 
 
-<script src ="../../../../lib/jquery-3.6.0.min.js"></script>
+<script src ="/springtest/src/main/webapp/WEB-INF/lib/jquery-3.6.0.min.js"></script>
 
 <script>
-$('#test').css('border','1px solid blue')
+
+
+
+function board(){
+
+	console.log("dddd");
+	location.href = "egovSampleList.do";
+}
+
 
 </script>
 
@@ -18,7 +26,7 @@ $('#test').css('border','1px solid blue')
 <body>
  <div id="test">jQuery 테스트</div>
 
-<input type ="radio" id ="radio_1" name ="btn_rd1" value = '1' onclick = ""/>버튼1
+<input type ="radio" id ="radio_1" name ="btn_rd1" value = '1' onclick = ""/>게시판 생성
 <br>
 <input type ="radio" id ="radio_1" name ="btn_rd1" value = '2' onclick = ""/>버튼2
 <br>
@@ -26,9 +34,10 @@ $('#test').css('border','1px solid blue')
 <br>
 <input type ="radio" id ="radio_1" name ="btn_rd1" value = '4' onclick = ""/>버튼4
 <br>
-<input type ="radio" id ="radio_1" name ="btn_rd1" value = '5' onclick = ""/>버튼5
-
-<input type ="button" id="insert_data" name = "btn_1"/>테스트 버튼
+<input type ="radio" id ="radio_1" name ="btn_rd1" value = '5' onclick = "board()"/>리스트로 이동
+<br>
+<input type ="button" id="insert_data" name = "btn_1" onclick = 'location.href="egovSampleList.do"'/>테스트 버튼
+<input type ="button" id="insert_data" name = "btn_1" onclick = 'board()'/>페이지 이동
 
 
 </body>
